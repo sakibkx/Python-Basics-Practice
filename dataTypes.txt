@@ -1,0 +1,7 @@
+note: https://chatgpt.com/canvas/shared/67b0713a37e881919b73234bee5307bc
+
+operation applicable on each data types: 
+      https://chatgpt.com/canvas/shared/67b07320627081918d14d15e850ed4d6
+
+type conversion: 
+      https://chatgpt.com/canvas/shared/67b07587ead481919fcdb50601310815
