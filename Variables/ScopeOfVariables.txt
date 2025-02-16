@@ -1,0 +1,33 @@
+Overview
+
+The scope of a variable determines where it can be accessed within a program. Python has four types of variable scopes:
+
+1️⃣ Local Scope
+
+# A variable declared inside a function is local to that function.
+# It cannot be accessed outside of the function.
+# Created when the function is called and destroyed once the function exits.
+
+2️⃣ Enclosing (Nonlocal) Scope
+
+# Found in nested functions.
+# A variable declared in an outer function can be accessed by an inner function using nonlocal.
+# It is not local to the inner function but also not global.
+
+3️⃣ Global Scope
+
+# A variable declared outside all functions is global.
+# Can be accessed throughout the program.
+# Use global inside a function to modify a global variable.
+
+4️⃣ Built-in Scope
+
+# Python has many built-in functions and constants (e.g., print(), len(), int()).
+# These are always available, unless overridden by local or global variables.
+# Scope Resolution: LEGB Rule
+# Python follows the LEGB rule to resolve variable names:
+# Local – Inside the current function.
+# Enclosing – Inside the outer function (for nested functions).
+# Global – At the module level.
+# Built-in – Python’s predefined names.
+# If a variable is not found in the Local, Python searches in Enclosing, then Global, and finally Built-in.
