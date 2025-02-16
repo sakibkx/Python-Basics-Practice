@@ -62,6 +62,37 @@ print("Is Lower:", name.islower())
 print("Starts With 'S':", name.startswith('S'))
 print("Ends With 'b':", name.endswith('b'))
 
+#N.B : 
+
+# Original string with escape sequence
+string_with_escape = "Hello\nWorld"
+
+# 1️ Normal Print (Interprets Escape Sequence)
+print("1️ Normal Print (Interprets \\n as a Newline):")
+print(string_with_escape)  
+print("-" * 40)
+
+# 2️ Using Raw String (r"...") - Escape sequence is not interpreted
+print("2️ Using Raw String (r\"...\"):")
+print(r"Hello\nWorld")
+print("-" * 40)
+
+# 3️ Using Double Backslashes (\\) to show the actual escape sequence
+print("3️ Using Double Backslashes (\\\\):")
+print("Hello\\nWorld")
+print("-" * 40)
+
+# 4️ Using repr() to display escape sequences as literals
+print("4️ Using repr() function:")
+print(repr(string_with_escape))
+print("-" * 40)
+
+# 5️ Using encode().decode() to show escape sequences explicitly
+print("5️ Using encode('unicode_escape').decode():")
+print(string_with_escape.encode('unicode_escape').decode())
+print("-" * 40)
+
+
 # List Operations
 fruits = ["apple", "banana", "cherry"]
 print("\nList Operations:")
