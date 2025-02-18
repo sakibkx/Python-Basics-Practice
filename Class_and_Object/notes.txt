@@ -1,0 +1,3 @@
+class and object: https://chatgpt.com/canvas/shared/67b499909d448191b3921e66b7f47502
+
+polymorphism: https://chatgpt.com/canvas/shared/67b49b4556e8819197fd7d823ee2e809
