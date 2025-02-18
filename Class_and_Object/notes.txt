@@ -7,3 +7,5 @@ inheritance: https://chatgpt.com/canvas/shared/67b4a445f7d08191926a39c91ae7ff71
 types of inheritance: https://chatgpt.com/canvas/shared/67b4a9cee09c819194aed16aad3ffa8d
 
 abstract classes: https://chatgpt.com/canvas/shared/67b4d5b848a081919ee1b90073de2669
+
+encapsulation: https://chatgpt.com/canvas/shared/67b4e8511b848191ab07925fc4027743
