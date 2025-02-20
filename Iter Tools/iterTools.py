@@ -66,6 +66,12 @@ print("Chaining 'AB' and [1, 2]:")
 print(list(itertools.chain("AB", [1, 2])))
 print("\n")
 
+# chain.from_iterable()
+print("Flattening [[1,2], [3,4], [5,6]]:")
+nested_list = [[1, 2], [3, 4], [5, 6]]
+print(list(itertools.chain.from_iterable(nested_list)))
+print("\n")
+
 # compress(data, selectors)
 print("Compress 'ABCDEF' with [1,0,1,0,1,0]:")
 print(list(itertools.compress("ABCDEF", [1, 0, 1, 0, 1, 0])))
@@ -76,6 +82,11 @@ print("Drop while x < 3 in [1, 2, 3, 4, 5]:")
 print(list(itertools.dropwhile(lambda x: x < 3, [1, 2, 3, 4, 5])))
 print("\n")
 
+# takewhile(func, iterable)
+print("Take while x < 3 in [1, 2, 3, 4, 5]:")
+print(list(itertools.takewhile(lambda x: x < 3, [1, 2, 3, 4, 5])))
+print("\n")
+
 # filterfalse(func, iterable)
 print("Filter false (keep odd numbers) from [1, 2, 3, 4]:")
 print(list(itertools.filterfalse(lambda x: x % 2 == 0, [1, 2, 3, 4])))
@@ -84,6 +95,12 @@ print("\n")
 # islice(iterable, start, stop, step)
 print("Slice [0,1,2,3,4] from index 1 to 4, step 2:")
 print(list(itertools.islice([0, 1, 2, 3, 4], 1, 4, 2)))
+print("\n")
+
+# starmap(func, iterable)
+print("Starmap: Multiply pairs [(2,3), (4,5), (6,7)]:")
+pairs = [(2, 3), (4, 5), (6, 7)]
+print(list(itertools.starmap(operator.mul, pairs)))
 print("\n")
 
 # tee(iterable, n)
